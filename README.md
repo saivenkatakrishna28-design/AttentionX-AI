@@ -122,28 +122,23 @@ Hours of manual editing become minutes.
 
 ---
 
-# 🧠 Architecture
-
-```text id="sdx1m7"
-Upload Long Video
-        ↓
-Extract Audio
-   ↙          ↘
-Whisper      Audio Energy Analysis
-Transcription
-        ↓
-Transcript + Speech Scoring
-        ↓
-Rank Emotional Peaks
-        ↓
-Create Short Clips
-        ↓
-Smart Crop to 9:16
-        ↓
-Generate Dynamic Captions
-        ↓
-Export Final Shorts
+## Architecture
+```mermaid
+flowchart LR
+A[Upload Long Video] --> B[Extract Audio]
+B --> C[Whisper Transcription]
+B --> D[Audio Energy Analysis]
+C --> E[Transcript Segment Scoring]
+D --> E
+E --> F[Rank Emotional Peaks]
+F --> G[Create Short Clips]
+G --> H[Smart Crop to 9:16]
+H --> I[Generate Captions + Hooks]
+I --> J[Download Ready Shorts]
 ```
+
+---
+
 
 ---
 
