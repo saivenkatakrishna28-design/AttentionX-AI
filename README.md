@@ -1,17 +1,31 @@
 # 🚀 AttentionX AI
 
 <p align="center">
-<b>Automated Content Repurposing Engine</b><br>
-Built for the <b>UnsaidTalks AttentionX AI Hackathon</b>
+  <h1 align="center">AttentionX AI</h1>
+  <p align="center">
+    <b>Automated Content Repurposing Engine</b><br>
+    Built for the <b>UnsaidTalks AttentionX AI Hackathon</b>
+  </p>
 </p>
 
 <p align="center">
-Turn long-form videos into viral short-form clips using Artificial Intelligence.
+Turn long-form videos into multiple viral-ready short-form clips using Artificial Intelligence.
 </p>
 
 <p align="center">
-👨‍💻 <b>Developed by Nune Sai Venkata Krishna</b>
+👨‍💻 <b>Developed & Submitted by Nune Sai Venkata Krishna</b>
 </p>
+
+---
+
+## 🏆 Submission Highlights
+
+✅ Public GitHub Repository  
+✅ Working AI Prototype  
+✅ Demo Video Included  
+✅ Live Hosted Version  
+✅ Real Creator Use Case  
+✅ Strong UI + Presentation
 
 ---
 
@@ -27,118 +41,139 @@ Hosted prototype available via GitHub Codespaces preview.
 
 ---
 
-# 🌟 Full Project Overview
+# 🌟 Executive Summary
 
-AttentionX AI is a smart AI-powered platform that helps creators, mentors, educators, podcasters, and businesses convert long-form videos into multiple engaging short-form clips automatically.
+AttentionX AI is an AI-powered productivity platform that transforms long-form videos into engaging short-form content automatically.
 
-Instead of manually editing one-hour videos, the platform detects valuable moments, generates captions, converts videos to vertical format, and exports ready-to-post content for Instagram Reels, TikTok, and YouTube Shorts.
+It helps:
 
-## One Long Video → A Week’s Worth of Content
+- creators  
+- educators  
+- podcasters  
+- mentors  
+- startups  
+- businesses  
+
+Instead of spending hours editing manually, users can upload one long video and generate multiple short clips ready for:
+
+- Instagram Reels  
+- TikTok  
+- YouTube Shorts  
+
+## One Long Video → A Week of Content
 
 ---
 
 # 🎯 Problem Statement
 
-Today’s creators produce valuable long-form content such as:
+Millions of creators publish valuable long-form content daily.
 
-- 🎓 Lectures
-- 🎙 Podcasts
-- 🧑‍🏫 Mentorship Sessions
-- 💼 Workshops
-- 🎥 Interviews
-- 📚 Educational Talks
+Examples:
 
-However, modern audiences prefer short-form content.
+- lectures  
+- podcasts  
+- coaching sessions  
+- interviews  
+- webinars  
+- educational videos  
 
-As a result, the best moments stay hidden inside long videos.
+However:
 
-AttentionX AI solves this by automatically finding the best moments and converting them into ready-to-post short clips.
+- viewers prefer short-form content  
+- editing takes hours  
+- valuable moments remain hidden  
+- creators lose reach and consistency  
+
+## Solution:
+
+AttentionX AI automatically finds the best moments and converts them into ready-to-post shorts.
+
+---
+
+# 💡 Why This Idea Matters
+
+Short-form video is dominating social media.
+
+Creators need:
+
+- faster workflows  
+- more content volume  
+- better reach  
+- less editing cost  
+
+AttentionX AI solves all four problems.
 
 ---
 
 # ✨ Core Features
 
-## 🎯 Emotional Peak Detection
+## 🎯 AI Highlight Detection
 
-AI detects:
+Detects:
 
-- motivational moments
-- viral reactions
-- energetic moments
-- high-retention scenes
-- valuable insights
+- motivational moments  
+- emotional peaks  
+- viral reactions  
+- energetic scenes  
+- insightful segments  
+
+Uses transcript + audio signals.
 
 ---
 
-## 🎬 Smart Vertical Crop (9:16)
+## 🎬 Smart Auto Crop (9:16)
 
-Automatically converts wide videos into mobile-first vertical reels.
+Converts standard video into vertical short-video format.
 
-Platforms supported:
+Perfect for:
 
-- Instagram Reels
+- Reels  
+- Shorts  
 - TikTok
-- YouTube Shorts
 
 ---
 
 ## 📝 Dynamic Captions
 
-Creates stylish captions with timing.
+Auto-generates subtitles with timing.
 
 Benefits:
 
-- higher retention
-- silent viewing support
-- accessibility
-- premium short-video feel
+- better retention  
+- accessibility  
+- silent-viewing friendly  
+- premium creator look  
 
 ---
 
-## 🔥 Hook Title Generator
+## 🔥 Hook Generator
 
-Examples:
+Creates engaging titles like:
 
-- You Need To Hear This
-- Best Advice in 30 Seconds
-- Hidden Truth About Success
-- This Changed My Life
-
----
-
-## 📤 Multi-Clip Export
-
-Generate multiple shorts from one long video.
-
-Examples:
-
-- 3 clips
-- 5 clips
-- 10 clips
+- You Need To Hear This  
+- Best Advice in 30 Seconds  
+- This Changed My Life  
+- Hidden Truth About Success  
 
 ---
 
-## ⚡ Fast Workflow
+## 📤 Multi Clip Output
+
+One long video can become:
+
+- 3 clips  
+- 5 clips  
+- 10+ clips  
+
+---
+
+## ⚡ Time Saving
 
 Hours of editing reduced to minutes.
 
 ---
 
-# 🛠 Tech Stack
-
-| Layer | Technology |
-|------|------------|
-| Frontend | Streamlit |
-| Backend | Python |
-| Speech Recognition | Whisper |
-| Video Processing | MoviePy |
-| Audio Analysis | Librosa |
-| Computer Vision | OpenCV |
-| Data Handling | Pandas |
-
----
-
-# 🧠 Architecture
+# 🧠 AI Workflow Architecture
 
 ```mermaid
 flowchart LR
@@ -151,64 +186,4 @@ E --> F[Rank Emotional Peaks]
 F --> G[Create Short Clips]
 G --> H[Smart Crop to 9:16]
 H --> I[Generate Captions + Hooks]
-I --> J[Download Ready Shorts]---
-
-# 👨‍💻 Developer
-
-## Nune Sai Venkata Krishna
-
-B.Tech CSE (AI & ML)  
-Parul Institute of Engineering and Technology  
-Vadodara, Gujarat
-
----
-
-# 🏆 Why This Project Stands Out
-
-## Impact
-
-Saves creators hours of manual editing.
-
-## Innovation
-
-Combines multiple AI tools into one workflow.
-
-## Technical Strength
-
-Working prototype with real deployment.
-
-## User Experience
-
-Simple upload → generate → download flow.
-
-## Market Potential
-
-Can grow into creator SaaS product.
-
----
-
-# 🔮 Future Scope
-
-- Multi-language subtitles  
-- AI thumbnails  
-- Voice cloning  
-- Direct social media publishing  
-- Analytics dashboard  
-- Team collaboration workspace  
-- Subscription monetization  
-
----
-
-# 🙌 Final Note
-
-## One Long Video → Endless Content Opportunities
-
-Built with creativity, speed, and AI innovation.
-
----
-
-# ❤️ Thank You
-
-### Developed & Submitted by
-
-## Nune Sai Venkata Krishna
+I --> J[Download Ready Shorts]
