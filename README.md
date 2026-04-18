@@ -1,239 +1,265 @@
-# AttentionX AI
-**Automated Content Repurposing Engine for the UnsaidTalks AttentionX AI Hackathon**
+# 🚀 AttentionX AI
 
-AttentionX turns long-form videos such as lectures, podcasts, and workshops into short-form vertical clips with AI-generated captions, hooks, and smart highlight detection.
+<p align="center">
+<b>Automated Content Repurposing Engine</b><br>
+Built for the <b>UnsaidTalks AttentionX AI Hackathon</b>
+</p>
 
-This project is designed directly around the hackathon brief:
-- detect emotional peaks / high-impact moments
-- convert long-form video to vertical short-form
-- generate timed captions and catchy hooks
-- provide a simple and polished user experience
-
-## Why this stands out
-1. **Hybrid highlight scoring**
-   - Combines audio energy
-   - Transcript intensity
-   - keyword-based virality signals
-   - speaking-density smoothing
-
-2. **Hackathon-friendly architecture**
-   - Streamlit UI for fast demo readiness
-   - modular Python engine
-   - works in both **demo mode** and **full AI mode**
-
-3. **Practical fallback design**
-   - If Whisper / FFmpeg / MediaPipe are not available, the app still demonstrates the flow end-to-end using transcript-driven scoring.
+<p align="center">
+Turn long-form videos into viral short-form clips using Artificial Intelligence.
+</p>
 
 ---
 
-## Features
-- Upload a long-form video
-- Auto-transcribe audio with Whisper
-- Detect the best “golden nugget” moments
-- Generate short clips around the best moments
-- Create hooks / headlines for each clip
-- Produce SRT subtitles
-- Export ready-to-review clips for Reels / Shorts / TikTok
+# 🌟 Full Project Overview
+
+AttentionX AI is a smart AI-powered platform that helps creators, mentors, educators, podcasters, and businesses convert long-form videos into multiple engaging short-form clips automatically.
+
+Instead of manually editing one-hour videos, the platform detects valuable moments, generates captions, converts videos to vertical format, and exports ready-to-post content for Instagram Reels, TikTok, and YouTube Shorts.
+
+One long video becomes a week’s worth of content.
 
 ---
 
-## Tech Stack
-- **Frontend**: Streamlit
-- **Backend**: Python
-- **Transcription**: faster-whisper
-- **Video Editing**: MoviePy
-- **Audio Analysis**: librosa, numpy
-- **Face Detection / Smart Crop**: MediaPipe + OpenCV
-- **Captions**: SRT generation
-- **Configuration**: python-dotenv
+# 🎯 Problem Statement
+
+Today’s creators produce valuable content in:
+
+* 🎓 Lectures
+* 🎙 Podcasts
+* 🧑‍🏫 Mentorship Sessions
+* 💼 Workshops
+* 🎥 Interviews
+* 📚 Educational Talks
+
+However, modern audiences prefer short-form content.
+
+Important moments remain buried inside long videos.
+
+AttentionX AI solves this by automatically extracting the best moments and converting them into engaging short clips.
 
 ---
 
-## Project Structure
-```text
-AttentionX_Winning_Submission/
-├── app.py
-├── requirements.txt
-├── .env.example
-├── README.md
-├── submission-text.txt
-├── project-description.txt
-├── demo-script.txt
-├── assets/
-│   └── logo.svg
-├── engine/
-│   ├── __init__.py
+# ✨ Full Features
+
+## 🎯 Emotional Peak Detection
+
+AI analyzes transcript, keywords, and audio intensity to detect:
+
+* motivational moments
+* viral reactions
+* energetic moments
+* insightful advice
+* engaging highlights
+
+---
+
+## 🎬 Smart Vertical Crop (9:16)
+
+Automatically converts landscape videos into mobile-first short format.
+
+Perfect for:
+
+* Instagram Reels
+* TikTok
+* YouTube Shorts
+
+---
+
+## 📝 Dynamic Captions
+
+Creates automatic subtitles with timing.
+
+Benefits:
+
+* better watch retention
+* silent viewing support
+* accessibility
+* modern reel style appearance
+
+---
+
+## 🔥 Hook Title Generator
+
+Creates engaging titles such as:
+
+* You Need To Hear This
+* Best Advice in 30 Seconds
+* Hidden Truth About Success
+* This Changed My Life
+
+---
+
+## 📤 Multi Clip Export
+
+One long video can generate:
+
+* 3 shorts
+* 5 shorts
+* 10 shorts
+
+depending on detected highlights.
+
+---
+
+## ⚡ Fast Workflow
+
+Hours of manual editing become minutes.
+
+---
+
+# 🛠 Tech Stack
+
+| Layer              | Technology |
+| ------------------ | ---------- |
+| Frontend           | Streamlit  |
+| Backend            | Python     |
+| Speech Recognition | Whisper    |
+| Video Editing      | MoviePy    |
+| Audio Analysis     | Librosa    |
+| Computer Vision    | OpenCV     |
+| Data Handling      | Pandas     |
+
+---
+
+# 🧠 Architecture
+
+```text id="sdx1m7"
+Upload Long Video
+        ↓
+Extract Audio
+   ↙          ↘
+Whisper      Audio Energy Analysis
+Transcription
+        ↓
+Transcript + Speech Scoring
+        ↓
+Rank Emotional Peaks
+        ↓
+Create Short Clips
+        ↓
+Smart Crop to 9:16
+        ↓
+Generate Dynamic Captions
+        ↓
+Export Final Shorts
+```
+
+---
+
+# 📁 Project Structure
+
+```text id="jv1xq3"
+AttentionX-AI/
+│── app.py
+│── README.md
+│── requirements.txt
+│── .env.example
+│── demo-script.txt
+│── submission-text.txt
+│── project-description.txt
+│── assets/
+│── engine/
 │   ├── config.py
-│   ├── utils.py
-│   ├── transcription.py
-│   ├── highlights.py
-│   ├── cropper.py
+│   ├── pipeline.py
 │   ├── captions.py
-│   └── pipeline.py
-└── outputs/
+│   ├── scorer.py
+│   ├── cropper.py
+│   └── utils.py
 ```
 
 ---
 
-## Installation
-### 1) Create virtual environment
-```bash
-python -m venv .venv
-```
+# 🚀 Run Locally
 
-### 2) Activate it
-**Windows**
-```bash
-.venv\Scripts\activate
-```
-
-**Mac/Linux**
-```bash
-source .venv/bin/activate
-```
-
-### 3) Install dependencies
-```bash
+```bash id="u4tq7d"
 pip install -r requirements.txt
-```
-
-### 4) Run the app
-```bash
 streamlit run app.py
 ```
 
 ---
 
-## Environment Variables
-Create a `.env` file using `.env.example`.
+# 🎥 Demo Video
 
-```env
-WHISPER_MODEL=base
-MAX_HIGHLIGHTS=3
-CLIP_DURATION=45
-PADDING_BEFORE=8
-PADDING_AFTER=12
-```
+Add Google Drive demo link here.
 
 ---
 
-## How it works
-### Step 1: Transcription
-The app extracts audio from the uploaded video and transcribes it with timestamped segments using Whisper.
+# 📌 Important Note
 
-### Step 2: Highlight Scoring
-Each transcript segment is scored with a weighted combination of:
-- audio energy
-- excitement keywords
-- density of meaningful words
-- short-form suitability
-
-### Step 3: Clip Generation
-Top-ranked segments are converted into short clips with pre/post padding.
-
-### Step 4: Vertical Output
-The clip is converted to a vertical format. If face tracking is available, the frame is centered dynamically around the speaker.
-
-### Step 5: Captions + Hook
-The app creates:
-- `.srt` subtitle file
-- hook/headline suggestions
-- ranked clip descriptions
-
----
-
-## Scoring formula
-A simplified score is computed as:
-
-```text
-score =
-0.40 * normalized_audio_energy
-+ 0.35 * transcript_impact_score
-+ 0.15 * keyword_virality_score
-+ 0.10 * speaking_density_score
-```
-
-This hybrid approach improves clip selection compared with keyword-only methods.
-
----
-
-## Demo flow for judges
-1. Open the app
-2. Upload a mentorship / lecture video
-3. Click **Generate Shorts**
-4. Review ranked highlights
-5. Export clips and captions
-6. Show the outputs folder
-
----
-
-## Innovation points
-- multi-signal highlight ranking instead of simple trimming
-- practical dual-mode pipeline for hackathon reliability
-- ready for educator / creator workflows
-- can be extended with Gemini headline rewriting and virality ranking
-
----
-
-## Future scope
-- Gemini / LLM-powered hook improvement
-- emotion classification from voice tone
-- automatic B-roll suggestions
-- social platform-specific export presets
-- multilingual subtitles
-- brand templates for creators
-
----
-
-## Hosting
-You can deploy the Streamlit version on:
-- Streamlit Community Cloud
-- Render
-- Hugging Face Spaces
-
----
-
-## Demo video link
-Add your Google Drive demo video link here before submission:
-
-```md
-Demo Video: [Paste your Google Drive link here]
-```
-
----
-
-## Submission checklist
-- [x] Public GitHub repository
-- [x] Complete source code
-- [x] README with explanation
-- [ ] Demo video link added in README
-- [ ] Hosted URL added if deployed
-- [ ] Final repository link submitted on Unstop
-
----
-
-## Architecture
-```mermaid
-flowchart LR
-A[Upload Long Video] --> B[Extract Audio]
-B --> C[Whisper Transcription]
-B --> D[Audio Energy Analysis]
-C --> E[Transcript Segment Scoring]
-D --> E
-E --> F[Rank Emotional Peaks]
-F --> G[Create Short Clips]
-G --> H[Smart Crop to 9:16]
-H --> I[Generate Captions + Hooks]
-I --> J[Download Ready Shorts]
-```
-
----
-
-## Important note
 For the strongest demo, use a video where:
-- one speaker is visible
-- audio is clean
-- there are clear energetic or insightful moments
-- duration is 3 to 20 minutes
 
-This makes the app look significantly better during judging.
+* one speaker is clearly visible
+* audio is clean
+* there are energetic or insightful moments
+* duration is between 3 to 20 minutes
+* face remains visible often
+* speech is clear
+
+This makes the project look significantly stronger during judging.
+
+---
+
+# 📂 Submission Checklist
+
+✅ Public GitHub Repository
+✅ Full Source Code
+✅ README Present
+✅ Demo Video Link
+✅ Working Prototype
+✅ Clean Folder Structure
+
+---
+
+# 👨‍💻 Team
+
+**Blue Stars**
+Parul Institute of Engineering and Technology
+
+---
+
+# 🏆 Why This Project Stands Out
+
+## Impact
+
+Saves creators hours of editing time.
+
+## Innovation
+
+Combines multiple AI systems into one workflow.
+
+## Technical Execution
+
+Well-structured deployable prototype.
+
+## User Experience
+
+Simple upload and generate experience.
+
+## Market Potential
+
+Can scale into a creator SaaS startup.
+
+---
+
+# 🔮 Future Scope
+
+* Multi-language subtitles
+* AI thumbnails
+* Voice cloning
+* Direct social media publishing
+* Analytics dashboard
+* Collaboration workspace
+* Subscription model
+
+---
+
+# 🙌 Final Note
+
+## One Long Video → Endless Content Opportunities
+
+Built with creativity, speed, and AI innovation.
+
+---
+
+# ❤️ Thank You
