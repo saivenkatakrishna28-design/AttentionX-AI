@@ -1,0 +1,7 @@
+AttentionX AI is a content repurposing engine designed for mentors, educators, and creators who produce valuable long-form videos but struggle to turn them into short, viral, social-media-friendly content.
+
+The platform accepts a long-form video input and processes it through a modular AI pipeline. It first transcribes the content using Whisper, then analyzes both the transcript and the audio signal to detect emotional peaks and high-value moments. These segments are ranked using a hybrid scoring system and converted into ready-to-share short clips. The selected clips are further enhanced with subtitle files and engaging hooks to increase retention on short-form platforms such as YouTube Shorts, Instagram Reels, and TikTok.
+
+The focus of the project is not only technical execution but also usability. A simple Streamlit interface allows users to upload a video, process it, review top highlights, and export clips quickly. This makes the prototype hackathon-friendly, easy to demo, and practical for real creators.
+
+AttentionX AI directly aligns with the hackathon problem statement by making high-value educational content more snackable, accessible, and shareable.

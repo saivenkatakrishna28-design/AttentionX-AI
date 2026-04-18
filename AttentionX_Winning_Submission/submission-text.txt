@@ -1,0 +1,33 @@
+Project Name: AttentionX AI
+
+Problem Solved:
+AttentionX AI solves the problem of converting long-form educational and mentorship videos into short-form, engaging, and shareable clips. It automatically identifies high-impact moments, creates vertical-friendly short clips, and generates captions and hooks to improve viewer engagement.
+
+Key Features:
+1. Automatic transcription using Whisper
+2. Emotional peak / highlight detection using hybrid scoring
+3. Vertical short clip generation for Reels / Shorts / TikTok
+4. Subtitle generation with timestamps
+5. Hook headline generation for better retention
+6. Simple UI for creators, mentors, and educators
+
+Innovation:
+Unlike simple clip-cutting tools, AttentionX AI uses a multi-signal ranking system that combines audio energy, transcript quality, keyword virality, and speaking density to identify the best moments from a long video. This makes the selected clips more relevant, emotionally engaging, and social-media ready.
+
+Tech Stack:
+- Streamlit
+- Python
+- faster-whisper
+- librosa
+- MoviePy
+- MediaPipe
+- OpenCV
+
+GitHub Repository:
+[Paste your public GitHub repo link here]
+
+Hosted Project:
+[Paste hosted link here if deployed]
+
+Demo Video:
+[Paste Google Drive demo video link here]

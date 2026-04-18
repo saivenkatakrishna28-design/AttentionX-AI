@@ -1,0 +1,37 @@
+DEMO VIDEO SCRIPT - ATTENTIONX AI
+
+1. Introduction
+Hello everyone, this is our project AttentionX AI, an automated content repurposing engine designed for mentors, educators, and creators.
+
+2. Problem Statement
+Creators often produce long-form content such as lectures, podcasts, and workshops. But modern audiences prefer short-form content. Valuable moments often stay hidden inside 30 to 60 minute videos. Extracting those moments manually takes a lot of time.
+
+3. Our Solution
+AttentionX AI solves this by automatically:
+- transcribing the video
+- identifying emotional and high-impact moments
+- creating short-form clips
+- generating captions and hooks for social media
+
+4. Show the Interface
+Here we have the Streamlit web app. The user uploads a long-form video and clicks Generate Shorts.
+
+5. Explain the Pipeline
+In the backend, we first transcribe the video using Whisper.
+Then we analyze audio intensity and transcript quality.
+We rank the best segments using a hybrid highlight score.
+Finally, we export short clips with subtitles and vertical formatting support.
+
+6. Show Output
+Now we can see the top-ranked highlights, their timestamps, hook suggestions, and exported subtitle files.
+These clips are ready for Reels, TikTok, and YouTube Shorts.
+
+7. Innovation
+Our innovation lies in combining multiple signals instead of using only timestamps or transcript keywords.
+This gives better quality highlight detection and produces more engaging short-form content.
+
+8. Impact
+This can help educators, mentors, podcasters, and creators turn one long session into multiple shareable pieces of content, improving reach and audience engagement.
+
+9. Closing
+Thank you for watching. This is AttentionX AI.

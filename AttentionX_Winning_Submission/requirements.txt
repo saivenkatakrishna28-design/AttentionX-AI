@@ -1,0 +1,11 @@
+streamlit>=1.44.0
+numpy>=1.26.0
+pandas>=2.2.0
+moviepy>=1.0.3
+opencv-python>=4.9.0.80
+mediapipe>=0.10.14
+librosa>=0.10.2
+soundfile>=0.12.1
+faster-whisper>=1.0.3
+python-dotenv>=1.0.1
+tqdm>=4.66.0
