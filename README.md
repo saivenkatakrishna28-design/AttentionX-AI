@@ -11,13 +11,25 @@ Turn long-form videos into viral short-form clips using Artificial Intelligence.
 
 ---
 
+## 🎥 Demo Video
+
+https://drive.google.com/file/d/1zuMKkaFUm9ODZ3JA9Xpz3JhWB7xjHDSO/view?usp=sharing
+
+---
+
+## 🌐 Live Demo
+
+Hosted prototype available via GitHub Codespaces preview.
+
+---
+
 # 🌟 Full Project Overview
 
 AttentionX AI is a smart AI-powered platform that helps creators, mentors, educators, podcasters, and businesses convert long-form videos into multiple engaging short-form clips automatically.
 
 Instead of manually editing one-hour videos, the platform detects valuable moments, generates captions, converts videos to vertical format, and exports ready-to-post content for Instagram Reels, TikTok, and YouTube Shorts.
 
-One long video becomes a week’s worth of content.
+**One long video becomes a week’s worth of content.**
 
 ---
 
@@ -122,7 +134,8 @@ Hours of manual editing become minutes.
 
 ---
 
-## Architecture
+# 🧠 Architecture
+
 ```mermaid
 flowchart LR
 A[Upload Long Video] --> B[Extract Audio]
@@ -139,12 +152,9 @@ I --> J[Download Ready Shorts]
 
 ---
 
-
----
-
 # 📁 Project Structure
 
-```text id="jv1xq3"
+```text id="k0v8rx"
 AttentionX-AI/
 │── app.py
 │── README.md
@@ -167,16 +177,10 @@ AttentionX-AI/
 
 # 🚀 Run Locally
 
-```bash id="u4tq7d"
+```bash id="g4w0du"
 pip install -r requirements.txt
 streamlit run app.py
 ```
-
----
-
-# 🎥 Demo Video
-
-Add Google Drive demo link here.
 
 ---
 
